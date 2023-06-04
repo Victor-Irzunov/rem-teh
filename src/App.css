@@ -1,0 +1,43 @@
+.app{
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+ }
+ footer{
+	margin-top: auto;
+ }
+.active{
+	color: #fff;
+}
+
+/* .ant-drawer-title{
+color: #05d3ac !important;
+} */
+.ant-drawer-body{
+padding-top:10px !important;
+}
+ul{
+margin-bottom: 0 !important;
+}
+
+.fon{
+	background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+
+.css-dev-only-do-not-override-nvs69g.ant-float-btn{
+left: 15px !important;;
+bottom: 35px !important;
+}
+.css-dev-only-do-not-override-diro6f.ant-float-btn-default{
+	left: 15px !important;;
+bottom: 35px !important;
+}
+

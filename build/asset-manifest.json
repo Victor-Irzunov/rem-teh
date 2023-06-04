@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e08d4db9.css",
+    "main.js": "/static/js/main.7cc2fd5d.js",
+    "static/media/4.webp": "/static/media/4.087dc51312e6d42c108b.webp",
+    "static/media/kamin.webp": "/static/media/kamin.0fc8c8a92812a5a287de.webp",
+    "static/media/4-2.webp": "/static/media/4-2.277e002b64942c8392a8.webp",
+    "static/media/zabor.webp": "/static/media/zabor.b3bd16f4b64703718923.webp",
+    "static/media/7.webp": "/static/media/7.ff42380881de39246767.webp",
+    "static/media/1.webp": "/static/media/1.0a65272fe43a1321c5be.webp",
+    "static/media/sajding.webp": "/static/media/sajding.79aacc6d22f3a39a9fe5.webp",
+    "static/media/3-2.webp": "/static/media/3-2.29ee8b21697ab32a0b49.webp",
+    "static/media/2-2.webp": "/static/media/2-2.4553c4faaff671de8acd.webp",
+    "static/media/banya.webp": "/static/media/banya.9881cd8350bba0a9bd57.webp",
+    "static/media/6-2.webp": "/static/media/6-2.5d9826595c2b5825deaf.webp",
+    "static/media/2-3.webp": "/static/media/2-3.3726d4389f4e3a3e9aed.webp",
+    "static/media/krisha.webp": "/static/media/krisha.87f67a39114691187d85.webp",
+    "static/media/5.webp": "/static/media/5.9a8cd11c582b4fc7b14e.webp",
+    "static/media/7-5.webp": "/static/media/7-5.11ad142f96a407d5a8dc.webp",
+    "static/media/3.webp": "/static/media/3.2f7cd2df506cb4675069.webp",
+    "static/media/6.webp": "/static/media/6.05bc0b81ed1e295e255a.webp",
+    "static/media/2.webp": "/static/media/2.dfbb095bb5565edad78a.webp",
+    "static/media/1-1.webp": "/static/media/1-1.5491443d8e6485b40922.webp",
+    "static/media/7-3.webp": "/static/media/7-3.8a41340decd323ac1772.webp",
+    "static/media/plumber.webp": "/static/media/plumber.3db41beb2ba0ba321422.webp",
+    "static/media/7-2.webp": "/static/media/7-2.9989d803081121432b1d.webp",
+    "static/media/logo.webp": "/static/media/logo.131ff3ea5853c7e09da0.webp",
+    "static/media/logo2.webp": "/static/media/logo2.db8ce83ad91fbf83b134.webp",
+    "static/media/7-6.webp": "/static/media/7-6.7eded57e8b5b73cb1cd5.webp",
+    "static/media/click.svg": "/static/media/click.4df596f98091c4efa5190bcda062fd13.svg",
+    "static/media/viber.svg": "/static/media/viber.1fb397e443056dae0c5a48deca369c53.svg",
+    "static/media/instagram.svg": "/static/media/instagram.d6d5924601b579e6a3faefcd9285c656.svg",
+    "static/media/telegram.svg": "/static/media/telegram.b01261fab12c07c0f266a369518d7d68.svg",
+    "index.html": "/index.html",
+    "static/media/WhatsApp.svg": "/static/media/WhatsApp.029d876625b4f6c33e5dded3572d1208.svg",
+    "main.e08d4db9.css.map": "/static/css/main.e08d4db9.css.map",
+    "main.7cc2fd5d.js.map": "/static/js/main.7cc2fd5d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e08d4db9.css",
+    "static/js/main.7cc2fd5d.js"
+  ]
+}
