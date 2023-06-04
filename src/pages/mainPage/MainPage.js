@@ -155,7 +155,7 @@ export const MainPage = () => {
 			<VoprosOtvet />
 
 			<SectionGreyMain />
-			<FloatButton.BackTop shape="square" />
+			{/* <FloatButton.BackTop shape="square" /> */}
 
 		</div>
 	)

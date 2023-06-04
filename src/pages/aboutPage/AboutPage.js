@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from "react-helmet"
-import { FloatButton, Image } from 'antd'
+import { Image } from 'antd'
 import { motion } from "framer-motion"
 import { titleAnimation, titleAnimation2, yAnimation } from '../../constants/animation/AnimationConst'
 import techika from '../../images/techika.webp'
@@ -13,7 +13,7 @@ export const AboutPage = () => {
 				<title>{'О нас'}</title>
 				<meta name="description" content={'Фирма по ремонту бытовой техники'} />
 			</Helmet>
-			<FloatButton.BackTop shape="square" />
+			{/* <FloatButton.BackTop shape="square" /> */}
 			<BreadCrumbComp />
 			<div className='container mx-auto'>
 				

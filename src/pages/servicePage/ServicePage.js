@@ -91,7 +91,7 @@ export const ServicePage = () => {
 	return (
 		<section className=''>
 
-			<FloatButton.BackTop shape="square" />
+			{/* <FloatButton.BackTop shape="square" /> */}
 			<BreadCrumbComp />
 
 			{

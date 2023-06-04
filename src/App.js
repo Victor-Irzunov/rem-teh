@@ -1,7 +1,7 @@
 import './App.css'
 import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom'
 import React, { createContext, useState } from 'react'
-import { ConfigProvider } from 'antd'
+import { ConfigProvider, FloatButton } from 'antd'
 // import { observer } from "mobx-react-lite"
 import BreadCrumbComp from './components/breadcrumb/BreadcrumbComp'
 import { FooterComp } from './components/footer/FooterComp'
@@ -29,18 +29,18 @@ function App() {
   const [hover, setHover] = useState(false)
 
   const handleMouseLeave = () => {
-		setHover(false)
-	}
+    setHover(false)
+  }
 
   return (
     <ConfigProvider
       locale={locale}
-      // theme={{
-      //   token: {
-      //     colorPrimary: '#5338FF',
-      //     colorLink: '#5338FF',
-      //   },
-      // }}
+    // theme={{
+    //   token: {
+    //     colorPrimary: '#5338FF',
+    //     colorLink: '#5338FF',
+    //   },
+    // }}
     >
       <Context.Provider
         value={{
@@ -50,6 +50,7 @@ function App() {
         <StyleProvider hashPriority="high">
           <BrowserRouter>
             <div className="app">
+              <FloatButton.BackTop shape="square" style={{ right: 'auto', left: 16 }} />
               <div className='fon'></div>
               <div className=''>
                 <Header setHover={setHover} hover={hover} />

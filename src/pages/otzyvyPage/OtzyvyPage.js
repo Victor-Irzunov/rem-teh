@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Popover, Rate, Avatar, Image, FloatButton } from 'antd'
+import { Button, Popover, Rate, Avatar, Image } from 'antd'
 import { ExclamationCircleOutlined, LineOutlined, UserOutlined } from '@ant-design/icons'
 import { Helmet } from "react-helmet"
 import { FormOtzyvy } from '../../components/form/FormOtzyvy'
@@ -29,7 +29,7 @@ export const OtzyvyPage = () => {
 				<title>{'Отзывы фирмы по ремонту и строительству бань, крыш, заборов'}</title>
 				<meta name="description" content={'На сайте отзывы настоящих клиенто, которые заказывали у нас строительтво бани, забора, крыши.'} />
 			</Helmet>
-			<FloatButton.BackTop />
+			{/* <FloatButton.BackTop /> */}
 			<BreadCrumbComp />
 			<div className='container mx-auto mt-12'>
 				<div className='text-center mb-12 text-[#042A3F]'>

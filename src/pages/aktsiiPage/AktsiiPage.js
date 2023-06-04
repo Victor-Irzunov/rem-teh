@@ -38,17 +38,13 @@ export const AktsiiPage = () => {
 		setIsModalOpen(false)
 	}
 
-
-
-
-
 	return (
 		<section className='pb-12 w-full z-10 min-h-[60vh]' id='aktsii'>
 			<Helmet>
 				<title>{'Акциии и скидки'}</title>
 				<meta name="description" content={'Акции и скидки'} />
 			</Helmet>
-			<FloatButton.BackTop shape="square" />
+			{/* <FloatButton.BackTop shape="square" /> */}
 			<BreadCrumbComp />
 			<div className='container mx-auto mt-12'>
 				<motion.div
@@ -68,7 +64,6 @@ export const AktsiiPage = () => {
 					>
 					</motion.h2>
 				</motion.div>
-
 				<motion.div
 					className=''
 					initial="hidden"
@@ -128,7 +123,6 @@ export const AktsiiPage = () => {
 					</motion.div>
 
 				</motion.div>
-
 				<motion.div
 					className=''
 					initial="hidden"

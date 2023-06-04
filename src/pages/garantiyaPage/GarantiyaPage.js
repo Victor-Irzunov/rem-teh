@@ -7,25 +7,21 @@ import StepsComp from '../../components/steps/StepsComp'
 import { ModalComp } from '../../components/modal/ModalComp'
 import BreadCrumbComp from '../../components/breadcrumb/BreadcrumbComp'
 import support from '../../images/support.webp'
-
 export const GarantiyaPage = () => {
 	const [isModalOpen, setIsModalOpen] = useState(false)
-
 	const showModal = () => {
 		setIsModalOpen(!isModalOpen)
 	}
-
 	const handleCancel = () => {
 		setIsModalOpen(false)
 	}
-
 	return (
 		<section className='pb-12 w-full z-10 min-h-[60vh]' id='garantiya'>
 			<Helmet>
 				<title>{'Гарантийные случаи'}</title>
 				<meta name="description" content={'Гарантийные случаи'} />
 			</Helmet>
-			<FloatButton.BackTop shape="square" />
+			{/* <FloatButton.BackTop shape="square"  /> */}
 			<BreadCrumbComp />
 			<div className='container mx-auto mt-12'>
 				<motion.div
@@ -39,14 +35,12 @@ export const GarantiyaPage = () => {
 					>
 						Гарантия на ремонтные работы
 					</motion.h1>
-
 					<motion.div
 						className='text-center mb-2'
 						variants={titleAnimation2}
 					>
 						<Image src={support} width={150} className='' preview={false} />
 					</motion.div>
-
 					<motion.div
 						className='font-light text-sm'
 						initial="hidden"
