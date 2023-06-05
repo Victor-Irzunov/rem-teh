@@ -8,12 +8,12 @@ function VoprosOtvet() {
 	const screens = useScreens()
 	const color = '#fff'
 	return (
-		<section id='vopros' className='py-8 w-full z-10 bg-orange-500 relative mt-24'>
+		<section id='vopros' className='py-8 w-full z-10 relative mt-24'>
 			<div className=''>
 				<div className='container mx-auto'>
 					<div className='flex flex-col justify-between'>
 						<div className='text-center'>
-							<h2 className='text-white text-4xl uppercase'>
+							<h2 className='text-4xl uppercase'>
 								Часто задаваемые<span className='text-black'> вопросы</span>
 							</h2>
 							<h3 className='uppercase '>Ремонт бытовой техники в Минске</h3>
