@@ -6,9 +6,10 @@ import { useScreens } from '../../constants/Constants'
 
 function VoprosOtvet() {
 	const screens = useScreens()
-	const color = '#fff'
+	const color = '#eab308'
+	
 	return (
-		<section id='vopros' className='py-8 w-full z-10 relative mt-24'>
+		<section id='vopros' className='py-8 w-full z-10 relative mt-20'>
 			<div className=''>
 				<div className='container mx-auto'>
 					<div className='flex flex-col justify-between'>

@@ -4,14 +4,14 @@ import { titleAnimation2, titleAnimation } from '../../constants/animation/Anima
 
 export const SectionGreyMain = () => {
 	return (
-		<section className='bg-[#5338FF] text-[#F4F4F4] px-5 py-10'>
+		<section className='bg-white text-black px-5 py-10 text-justify'>
 			<motion.div
 				className=''
 				initial="hidden"
 				whileInView="visible"
 			>
 				<motion.h4
-					className='text-2xl text-[#F97315]'
+					className='text-2xl text-yellow-500 uppercase'
 					variants={titleAnimation}
 				>
 					rem-teh.by

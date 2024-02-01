@@ -13,6 +13,8 @@ import VoprosOtvet from '../../components/voprosOtvet/VoprosOtvet'
 import { InfoSection } from '../../components/infoSection/InfoSection'
 import run from '../../images/run.svg'
 import BreadCrumbComp from '../../components/breadcrumb/BreadcrumbComp'
+import SliderComp from '../../components/sliderComp/SliderComp'
+import { BrandSectionComp } from '../../components/brandSection/BrandSectionComp'
 
 export const MainPage = () => {
 	const screens = useScreens()
@@ -22,7 +24,6 @@ export const MainPage = () => {
 		question: false,
 		sale: false,
 		date: false
-
 	})
 	const showModal = (title, active) => {
 		setIsModalOpen(true)
@@ -36,7 +37,6 @@ export const MainPage = () => {
 		if (active === "date") {
 			setIsActive(prev => ({ ...prev, sale: false, question: false, date: true, }))
 		}
-
 	}
 	const handleCancel = () => {
 		setIsModalOpen(false)
@@ -45,12 +45,9 @@ export const MainPage = () => {
 	return (
 		<div className=''>
 			<Helmet>
-				<title>{`
-				Строительство и ремонт бань, крыш, заборов, печей и каминов под ключ в Могилеве`}</title>
-				<meta
-					name="description"
-					content={'Выполняем строительство и ремонт бань, крыш, заборов, печей и каминов. Услуга сантехника.'}
-				/>
+				<title>Ремонт Бытовой техники в Минске</title>
+				<meta name="description"
+					content="Выезд к клиенту. Ремонт холодильников, ремонт стиральных машин, ремонт посудомоющих машин. Недорого. Звоните!" />
 			</Helmet>
 			{
 				screens.md ?
@@ -63,11 +60,11 @@ export const MainPage = () => {
 								<h1 className='xy:text-3xl sd:text-7xl font-semibold  mb-2 tracking-wide uppercase'>
 									Ремонт бытовой техники в Минске
 								</h1>
-								<span className='text-orange-600 text-lg md:text-4xl tracking-widest'>
+								<span className='text-yellow-500 text-lg md:text-4xl tracking-widest'>
 									с выездом к клиенту
 								</span>
 								<p className=' uppercase text-lg mt-3'>
-									выезд в течении часа
+									выезд в течение часа
 								</p>
 							</div>
 
@@ -92,7 +89,7 @@ export const MainPage = () => {
 								</motion.h1>
 
 								<motion.p
-									className='xyy:text-sm xy:text-lg font-light tracking-wide uppercase leading-6'
+									className='xyy:text-sm xy:text-lg text-yellow-500 font-light tracking-wide uppercase leading-6'
 									variants={titleAnimation2}
 								>
 									с выездом к клиенту
@@ -102,7 +99,7 @@ export const MainPage = () => {
 									variants={titleAnimation2}
 								>
 									<Image src={run} width={20} />
-									<span className='ml-2'>выезд в течении часа</span>
+									<span className='ml-2'>выезд в течение часа</span>
 								</motion.div>
 							</motion.div>
 
@@ -117,7 +114,7 @@ export const MainPage = () => {
 							<div className='flex xyy:flex-col xy:flex-row xy:justify-between w-full'>
 								<div className='flex justify-start items-center text-black sd:text-lg xy:text-xs xy:mr-1 sd:mr-10 '>
 									<div
-										className='px-2.5 py-2 shadow-xl bg-white rounded-md border border-black/10 flex justify-center items-center'
+										className='px-2.5 py-2 shadow-xl bg-yellow-500 rounded-md border border-black/10 flex justify-center items-center'
 									>
 										<PercentageOutlined className='sd:text-lg xy:text-lg text-black' />
 
@@ -131,7 +128,7 @@ export const MainPage = () => {
 								</div>
 								<div className='flex justify-start items-center sd:text-lg xyy:mt-2 xy:mt-0 xy:text-xs text-black'>
 									<div
-										className='px-2.5 py-2 shadow-xl bg-white rounded-md border border-black/10 flex justify-center items-center'
+										className='px-2.5 py-2 shadow-xl bg-yellow-500 rounded-md border border-black/10 flex justify-center items-center'
 									>
 										<DollarCircleOutlined className='sd:text-lg xy:text-lg text-black' />
 									</div>
@@ -151,6 +148,10 @@ export const MainPage = () => {
 			<SectionServiceMainPageComp />
 
 			<InfoSection />
+
+			<SliderComp />
+
+			<BrandSectionComp />
 
 			<VoprosOtvet />
 

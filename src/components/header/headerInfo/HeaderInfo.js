@@ -7,10 +7,14 @@ import { ClockCircleOutlined, PhoneOutlined, ShakeOutlined } from '@ant-design/i
 import { useScreens } from '../../../constants/Constants'
 // import { DrawerComp } from '../../drawer/DrawerComp'
 import logo4 from '../../../images/logo/24_7_1.svg'
-import logo from '../../../images/logo/1.svg'
+// import logo from '../../../images/logo/blue.svg'
+import logo from '../../../images/logo/logo.webp'
 import mts from '../../../images/mts.svg'
-import logo2 from '../../../images/logo/fridge.svg'
-import logo3 from '../../../images/logo/washing-machine.svg'
+import life from '../../../images/life.svg'
+import pchelka from '../../../images/pchelka.webp'
+import pchelka2 from '../../../images/pchelka2.webp'
+// import logo2 from '../../../images/logo/blue2.svg'
+// import logo3 from '../../../images/logo/blue3.svg'
 import { DrawerCompForms } from '../../drawer/DrawerCompForms'
 
 export const HeaderInfo = ({ setIsVisible }) => {
@@ -43,8 +47,8 @@ export const HeaderInfo = ({ setIsVisible }) => {
 						<div className='container mx-auto flex justify-between items-center'>
 							<div className='flex justify-start items-center'>
 								{/* <Image src={logo} preview={false} width='80px' /> */}
-								<div className='flex items-center'>
-									<div className='flex flex-col items-start text-[#5338FF]'>
+								<div className='flex items-center mb-2'>
+									{/* <div className='flex flex-col items-start text-black'>
 										<span className='uppercase' >
 											ремонт
 										</span>
@@ -60,6 +64,19 @@ export const HeaderInfo = ({ setIsVisible }) => {
 											<Image src={logo2} preview={false} width='15px' />
 											<Image src={logo3} preview={false} width='15px' />
 										</div>
+									</div> */}
+									<Image src={logo} preview='false' alt='Логотип' width={55} />
+									<div className='ml-2'>
+										<div className='uppercase px-2'>
+											<p className='pb-0 mb-0 text-lg'>
+												Ремонт
+											</p>
+										</div>
+										<div className='bg-yellow-500 px-2 py-1'>
+											<p className='uppercase pb-0 mb-0 '>
+												бытовой техники
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -70,18 +87,20 @@ export const HeaderInfo = ({ setIsVisible }) => {
 								<span className='uppercase ml-0.5 font-light'>7</span>
 							</div>
 							<div className=''>
-								<div className='flex text-lg text-orange-500'>
+								<div className='flex text-lg '>
 									<PhoneOutlined className='rotate-90 mr-3 text-2xl' />
 									<div className='flex items-end'>
-										<a href='tel:80339174921' className='text-2xl'>+375(33) 917-49-21</a>
-										<span className='ml-1.5 font-extralight text-[#fb923c]'>мтс</span>
+										<a href='tel:80333504025' className='text-2xl'>+375 (33) 350-40-25</a>
+										<span className='ml-1.5 font-extralight '>мтс</span>
 									</div>
 								</div>
 								<div className='flex text-lg'>
-									<PhoneOutlined className='rotate-90 mr-3 text-2xl text-orange-500' />
+									<PhoneOutlined className='rotate-90 mr-3 text-2xl' />
 									<div className='flex items-end'>
-										<a href='tel:80257302610' className='text-2xl text-orange-500'>+375(25) 730-26-10</a>
-										<span className='ml-1.5 font-extralight text-orange-500'>life</span>
+										<a href='tel:80259311762' className='text-2xl'>
+											+375 (25) 931-17-62
+										</a>
+										<span className='ml-1.5 font-extralight'>life</span>
 									</div>
 								</div>
 
@@ -106,7 +125,7 @@ export const HeaderInfo = ({ setIsVisible }) => {
 					:
 
 					<div className='flex flex-col justify-between items-center pt-20 relative z-10 
-			border border-b-gray-300
+			
 					bg-white/20
 					 '>
 						<div className='flex items-center text-xs mb-2'>
@@ -128,28 +147,28 @@ export const HeaderInfo = ({ setIsVisible }) => {
 						<div className='mt-2 mb-2'>
 							<div className='text-lg'>
 								<div className='flex items-center pl-12'>
-									<a href='tel:80339174921'
+									<a href='tel:80333504025'
 										className='xyy:text-xl xy:text-2xl'
 										onClick={() => gtag_report_conversion('/')}
 									>
-										+375 33 917-49-21
+										+375 (33) 350-40-25
 									</a>
-									<Image src={mts} className='ml-2' preview={false} width={60}/>
+									<Image src={mts} className='ml-2' preview={false} width={60} />
 								</div>
-								{/* <div className='flex items-end pl-7 mt-2'>
+								<div className='flex items-center pl-12 mt-1'>
 									<a
-										href='tel:80257302610'
-										className='text-2xl'
+										href='tel:80259311762'
+										className='xyy:text-xl xy:text-2xl'
 										onClick={() => gtag_report_conversion('/')}
 									>
-										+375(25) 730-26-10
+										+375 (25) 931-17-62
 									</a>
-									<span className='ml-1 font-extralight text-[15px]'>life</span>
-								</div> */}
+									<Image src={life} className='ml-3' preview={false} width={40} />
+								</div>
 							</div>
 						</div>
 						<div className='flex flex-col items-center mb-2'>
-							<p className='text-sm text-[#5338FF] mb-2 uppercase'
+							<p className='text-sm text-yellow-500 mb-2 uppercase'
 								onClick={() => showDrawer('top', 'Заказать звонок')}
 							>
 								<ShakeOutlined />{' '}
@@ -169,6 +188,14 @@ export const HeaderInfo = ({ setIsVisible }) => {
 								</a>
 							</div>
 						</div>
+
+						<div className='absolute bottom-0 left-5'>
+							<Image src={pchelka} alt='Символ компании' width={60} />
+						</div>
+						<div className='absolute -bottom-10 right-5'>
+							<Image src={pchelka2} alt='Символ компании' width={55} />
+						</div>
+
 						<Affix offsetTop={30} onChange={() => setIsVisible(i => !i)}><div></div></Affix>
 					</div>
 			}

@@ -8,7 +8,7 @@ const { TextArea } = Input
 export const FormQuestion = ({handleCancel}) => {
 	const [tel, setTel] = useState('')
 	const onFinish = (values) => {
-		let messageForm = `<b>Вопрос с сайта</b>\n`
+		let messageForm = `<b>Вопрос с сайта "Ремонт бытовой техники"</b>\n`
 		messageForm += `<b> </b>\n`
 		messageForm += `<b>Клиент по имени ${values.name} задал вопрос </b>\n`
 		messageForm += `<b>Вопрос: ${values.message} </b>\n`

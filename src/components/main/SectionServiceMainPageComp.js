@@ -15,7 +15,7 @@ export const SectionServiceMainPageComp = () => {
 			className='mt-20 mb-10 xyy:px-5 sm:container sm:mx-auto'
 		>
 			<Divider />
-			<h2 className='uppercase'>
+			<h2 className='uppercase text-2xl '>
 				Наши услуги
 			</h2>
 			{data.map((el, idx) => {
@@ -30,8 +30,8 @@ export const SectionServiceMainPageComp = () => {
 						<motion.div
 							variants={yAnimation}
 						>
-							<p className='text-gray-500 uppercase text-xs tracking-wider'>
-								ремонт от <span className='font-semibold'>{el.name}</span> руб
+							<p className='text-gray-600 text-xs tracking-wider'>
+								Ремонт от <span className='font-semibold'>{el.name}</span> <span className=''>руб</span> 
 							</p>
 
 							<div className=''>

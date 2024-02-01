@@ -1,3 +1,5 @@
+
+
 .app{
 	overflow: hidden;
 	display: flex;
@@ -31,5 +33,22 @@ position: fixed;
 	right: 0;
 	z-index: -1;
 }
+
+
+.ant-btn-primary {
+	background-color: #eab308 !important;
+	color: #000 !important;
+	border:#000 !important;
+}
+
+.css-dev-only-do-not-override-diro6f.ant-float-btn-primary{
+	background-color: #eab308 !important;
+	color: #000 !important;
+}
+.css-dev-only-do-not-override-diro6f.ant-float-btn-primary .ant-float-btn-body{
+	background-color: #eab308 !important;
+	color: #000 !important;
+}
+
 
 

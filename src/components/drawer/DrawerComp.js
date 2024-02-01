@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Drawer } from 'antd'
 import { FormTel } from '../form/FormTel';
 import { FormDate } from '../form/FormDate';
 import { MenuMobil } from '../header/mobilMenu/MenuMobil'
 import { useScreens } from '../../constants/Constants';
+// import { MenuMobilPremium } from '../header/mobilMenu/MenuMobilPremium';
 
 export const DrawerComp = ({ open, placement, setOpen, isActiveForm, title }) => {
 	const screens = useScreens()
-	const onClose = () => {
+
+	const onclose = () => {
 		setOpen(false)
 	}
 
@@ -15,11 +17,9 @@ export const DrawerComp = ({ open, placement, setOpen, isActiveForm, title }) =>
 		<Drawer
 			title={title}
 			placement={placement}
-			onClose={onClose}
+			onClose={onclose}
 			open={open}
 			key={placement}
-			// className='bg-[#313846]'
-			// style={{background:'#313846'}}
 			width='330px'
 		>
 			{
@@ -29,8 +29,11 @@ export const DrawerComp = ({ open, placement, setOpen, isActiveForm, title }) =>
 				isActiveForm.date && <FormDate />
 			}
 			{
-				isActiveForm.menu && <MenuMobil onClose={onClose} />
+				isActiveForm.menu && <MenuMobil onclose={ onclose} />
 			}
+			{/* {
+				isActiveForm.menu2 && <MenuMobilPremium onClose={onClose} />
+			} */}
 		</Drawer>
 	)
 }

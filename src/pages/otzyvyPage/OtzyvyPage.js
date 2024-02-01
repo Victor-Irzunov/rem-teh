@@ -26,14 +26,14 @@ export const OtzyvyPage = () => {
 	return (
 		<section className='pb-12 w-full z-10 min-h-[60vh]' id='otzyvy'>
 			<Helmet>
-				<title>{'Отзывы фирмы по ремонту и строительству бань, крыш, заборов'}</title>
-				<meta name="description" content={'На сайте отзывы настоящих клиенто, которые заказывали у нас строительтво бани, забора, крыши.'} />
+				<title>{'Отзывы фирмы по ремонту бытовой техники'}</title>
+				<meta name="description" content={'На сайте отзывы настоящих клиенто, которые заказывали у нас ремонт бытовой техники'} />
 			</Helmet>
 			{/* <FloatButton.BackTop /> */}
 			<BreadCrumbComp />
 			<div className='container mx-auto mt-12'>
 				<div className='text-center mb-12 text-[#042A3F]'>
-					<h2 className='text-4xl uppercase'>Наши<span className=''> отзывы</span></h2>
+					<h1 className='text-4xl uppercase'>Наши<span className=''> отзывы</span></h1>
 					<LineOutlined style={{ color: '#F97315', fontSize: '3rem' }} />
 				</div>
 
@@ -310,11 +310,50 @@ export const OtzyvyPage = () => {
 						</div>
 					</div>
 
+					<div className='border-b py-4'>
+						<div className='flex'>
+							<div className=''>
+								<Avatar>
+									К
+								</Avatar>
+							</div>
+							<div className='ml-3 w-1/2'>
+								<p className='mb-0 text-lg'>Карина</p>
+								<p className='text-[10px] text-gray-400'>27.04.2023</p>
+								<Rate allowHalf defaultValue={5} />
 
+							</div>
+							<div className='w-1/4'>
+								{/* <Image src={img6} className='rounded-sm' /> */}
+							</div>
+						</div>
+						<div className='pl-6 mt-2'>
+							<p className='text-left text-sm mt-4'>
+								Доброго времени суток! Очень редко пишу отзывы, но захотелось поделиться впечатлениями, вдруг это поможет принять положительное решение в выборе именно этой фирмы по ремонту. Холодильник "накрылся" неожиданно,как обычно это и бывает. В камере пропала температура, продукты были на грани чтобы испортится, вечер, суббота. Выбор пал рандомно, и я очень рада, что именно сюда. Начиная от оператора колл центра, потом работой мастера, которой я осталась очень довольна, его деликатностью, подходом к клиенту, скоростью реагирования и в целом , остались только положительные впечатления от ,скажем так, не очень приятной ситуации. Благодарю!
+							</p>
 
+						</div>
+						<div className='pl-10 mt-8'>
+							<div className='flex'>
+								<Avatar icon={<UserOutlined />} size='small' />
+								<div className='ml-2'>
+									<p className='text-sm mb-0'>Александра</p>
+									<p className='text-[10px] text-gray-400'>администратор</p>
+								</div>
+							</div>
+							<div className='pl-8'>
+								<p className='text-xs text-gray-500 inline'>
+									Благодарим вас за такой теплый и искренний отзыв! Мы всегда стремимся предоставлять высококачественное обслуживание и решать проблемы наших клиентов в момент их возникновения. Мы гордимся тем, что смогли помочь вам в такой неожиданной ситуации и что вы остались довольны нашей работой.
+
+									Мы ценим ваше доверие и надеемся на долгосрочное сотрудничество. Если у вас возникнут еще какие-либо вопросы или потребуется наше обслуживание, не стесняйтесь обращаться. Мы всегда готовы прийти на помощь.
+
+									Спасибо, что выбрали нашу фирму по ремонту!
+								</p>
+							</div>
+						</div>
+					</div>
 
 				</div>
-
 
 				<div className='mt-14'>
 					<div

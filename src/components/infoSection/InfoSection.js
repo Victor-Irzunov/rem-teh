@@ -5,10 +5,10 @@ export const InfoSection = () => {
 	return (
 		<section className='py-10 z-10mt-24 mb-12 px-2 relative'>
 			<div className='container mx-auto'>
-				<div className='text-center  border border-black '>
+				<div className='text-center  border border-yellow-500'>
 
 				{/* <InfoOutlined className='text-2xl text-orange-500' /> */}
-					<p className='mt-4 text-2xl font-light uppercase'>
+					<p className='mt-4 text-2xl font-light uppercase text-yellow-500'>
 						Информация <span className=''>для </span> клиента
 					</p>
 

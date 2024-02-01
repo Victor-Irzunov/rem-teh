@@ -6,7 +6,7 @@ import { titleAnimation, titleAnimation2, yAnimation } from '../../constants/ani
 import StepsComp from '../../components/steps/StepsComp'
 import { ModalComp } from '../../components/modal/ModalComp'
 import BreadCrumbComp from '../../components/breadcrumb/BreadcrumbComp'
-import support from '../../images/support.webp'
+import support from '../../images/garantia.webp'
 export const GarantiyaPage = () => {
 	const [isModalOpen, setIsModalOpen] = useState(false)
 	const showModal = () => {
